@@ -1,0 +1,9 @@
+version: "3"
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./220240522_kobu.pdf:/usr/share/nginx/html/220240522_kobu.pdf
+            - ./index.html:/usr/share/nginx/html/index.html
